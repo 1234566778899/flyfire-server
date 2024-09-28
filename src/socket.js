@@ -4,7 +4,7 @@ const rooms = new Map();
 const setupSocket = (server) => {
     const io = socketIO(server, {
         cors: {
-            origin: ['http://localhost:3000'],
+            origin: ['http://localhost:3000', 'https://flyfar-liard.vercel.app'],
             credentials: true
         }
     });
